@@ -232,7 +232,7 @@ nav .down-nav ul a{
 
 .slider{
     height: 90vh;
-    background-image: url(./images/Screenshot_4.png);
+    background-color: #DFE1DF;
     border: none;
     outline: none;
     background-position: center;
@@ -274,20 +274,21 @@ nav .down-nav ul a{
 }
 @keyframes  slider-image {
     0%{
-        background-image: url(./images/Screenshot_4.png);
+        background-image: url(./images/fashiongirl.png);
     }
 
   50%{
-    background-image: url(./images/Screenshot_6.png);
+    background-image: url(./images/stylishgirl.png);
     
   }
 
   85%{
-    background-image: url(./images/Screenshot_5.png);
+    background-image: url(./images/attitudegirl.png);
   }
   100%{
-    background-image: url(./images/Screenshot_4.png);
-}
+    background-image: url(./images/fashiongirl.png);
+  }
+
 }
 /* slider section */
 
