@@ -1,0 +1,341 @@
+/* common code */
+:root{
+    --primaryColor : black;
+    --secondaryColor: white;
+    --commonColor: red;
+}
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+html{
+    scroll-behavior: smooth;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+ul{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+}
+
+button{
+    background-color: var(--primaryColor);
+    padding: 8px 15px;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+button:hover{
+    background-color: var(--commonColor);
+    color: white;
+
+}
+
+
+
+.simple-btn{
+    height: 40px ;
+width: 150px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgb(255, 255, 255);
+position: absolute;
+padding-right: 10px;
+cursor: pointer;
+}
+/* common code */
+
+
+/* nav bar star */
+
+/* upper nav start */
+nav .upper-nav{
+    background-color: var(--primaryColor);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding: 6px;
+    font-size: 10px;
+
+}
+
+nav .upper-nav .l-nav-upper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav .upper-nav  .m-upper-nav ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+nav .upper-nav  .m-upper-nav ul i{
+    color: var(--secondaryColor);
+}
+
+nav .upper-nav .r-upper-nav{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+/* upper nav end */
+
+nav .middle-nav{
+    height: 80px;
+}
+nav .middle-nav .m-f-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+nav .middle-nav .m-f-div img{
+height: 40px;
+
+}
+
+nav .middle-nav .m-e-nav-div input{
+    padding: 7px 16px;
+    font-size: 15px;
+}
+nav .middle-nav .m-e-nav-div .btn{
+    padding-left: 30px;
+    margin-left: -8px;
+   
+   
+}
+
+nav .middle-nav .m-e-nav-div{
+    position: relative;
+}
+nav .middle-nav .m-e-nav-div .simple-card{
+    position: absolute;
+    display: none;
+    top: 35px;
+    left: 59px;
+    height: 109px;
+    color: var(--primaryColor);
+    color: var(--primaryColor);
+    width: 277px;
+   
+
+}
+nav .middle-nav .m-e-nav-div .simple-card .simple-card-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 30px;
+    margin-top: 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+}
+nav .middle-nav .m-e-nav-div .simple-card .simple-card-header p{
+  color: var(--commonColor);
+  font-weight: 600;
+}
+
+nav .middle-nav .m-e-nav-div .simple-card  .card-button{
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: space-around;
+    gap: 6px;
+}
+
+.btn11{
+padding-left: 40px;
+
+}
+
+nav .middle-nav .m-e-nav-div:hover .simple-card{
+
+    display: block;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+
+
+.middle-nav{
+    position: relative;
+}
+.middle-nav .search-icon{
+    position: absolute;
+    right: 268px;
+    top: 47px;
+    font-size: 11px;
+}
+.middle-nav .card-shopping-icon{
+    position: absolute;
+    right: 235px;
+    top: 47px;
+    font-size: 11px;
+    color: var(--secondaryColor);
+}
+
+
+.btn-abs {
+    position: relative;
+    }
+    
+    .btn-abs .cart{
+        position: absolute;
+        top: -26px;
+        right: 83px;
+        color: white;
+    }
+    .btn1-abs .arrow{
+        position: absolute;
+        top: 69px;
+        right: 96px;
+        color: white;
+    }
+
+    nav .down-nav ul{
+        display: flex;
+        font-weight: 600;
+        gap: 10px;
+        margin: 50px 60px;
+        gap: 18px;
+       
+    }
+
+nav .down-nav ul a{
+    color: var(--primaryColor);
+}
+
+.down-nav ul li a{
+/* transition: 0.5s; */
+}
+.down-nav ul li a:hover{
+    cursor: pointer;
+    color: red;
+    border-bottom: 5px solid red;
+    padding: 5px;
+}
+
+/* nav bar end */
+
+/* slider section */
+
+.slider{
+    height: 90vh;
+    background-image: url(./images/Screenshot_4.png);
+    border: none;
+    outline: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+   animation: slider-image 20s linear infinite ;
+
+}
+
+.slider-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 157px;
+    right: 166px;
+    height: 50vh;
+    
+}
+.slider-content h2{
+    letter-spacing: 10px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.slider-content .new-collection{
+    font-weight: 500;
+    font-size: 30px;
+}
+.slider-content .save{
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    font-size: 20px;
+}
+.slider .slider-content .btn{
+    font-size: 20px;
+}
+@keyframes  slider-image {
+    0%{
+        background-image: url(./images/Screenshot_4.png);
+    }
+
+  50%{
+    background-image: url(./images/Screenshot_6.png);
+    
+  }
+
+  85%{
+    background-image: url(./images/Screenshot_5.png);
+  }
+  100%{
+    background-image: url(./images/Screenshot_4.png);
+}
+}
+/* slider section */
+
+.card3{
+width: 90%;
+margin: 60px auto;
+display: flex;
+gap: 50px;
+/* justify-content: center; */
+position: relative;
+
+
+}
+
+
+.card3 .card3-content1{
+    bottom: 36px;
+    left: 0;
+    width: 120px;
+padding: 15px;
+
+}
+.card3 .card3-content2{
+    bottom: 36px;
+    left: 376px;
+    padding: 15px;
+    width: 120px;
+
+}
+.card3 .card3-content3{
+    bottom: 36px;
+    right: 183px;
+    padding: 15px
+
+}
+
+.card3-div .img-card3{
+    transition: 0.3s;
+}
+.card3-div .img-card3:hover{
+cursor: pointer;
+transform: scale(1.1);
+
+}
+
+/* new arrivals */
+
+
+
+
+/* new arrivals */
